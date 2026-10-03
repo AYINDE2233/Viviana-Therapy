@@ -17,6 +17,7 @@
     "dotenv": "^18.0.5",
     "express": "^5.2.1",
     "nodemailer": "^10.0.13",
+    "resend": "^6.32.0",
     "tsx": "^4.23.15"
   },
   "devDependencies": {
