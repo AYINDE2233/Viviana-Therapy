@@ -3,10 +3,18 @@ import cors from "cors";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
 
+
+
 dotenv.config();
 
 const app = express();
+
 const PORT = process.env.PORT || 5000;
+
+// Health check route for UptimeRobot
+app.get("/", (req, res) => {
+  res.status(200).send("API is running...");
+});
 
 // Explicit CORS Configuration
 const corsOptions = {
